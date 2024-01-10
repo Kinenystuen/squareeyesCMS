@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareEyes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+    <header></header>
+    <main class="content_wrap">
+        <h1>SquareEyes</h1>
+        <h2>Products</h2>
+        <div class="search">
+            <input type="search" id="search-input">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="tags">
+            <label for="category">All categories</label>
+            <input type="radio" class="category" name="category" id="categories" value="true">
+            <input type="radio" class="category" name="category" id="action" value="16">
+            <label for="action">Action</label>
+            <input type="radio" class="category" name="category" id="comedy" value="21">
+            <label for="comedy">Comedy</label>
+            <input type="radio" class="category" name="category" id="kids" value="20">
+            <label for="kids">Kids</label>
+            <input type="radio" class="category" name="category" id="horror" value="19">
+            <label for="horror">Horror</label>
+            <input type="radio" class="category" name="category" id="drama" value="22">
+            <label for="drama">Drama</label>
+        </div>
+        <div class="per-page"> 
+            <label for="">Number per page</label>
+            <select class="per-page-selection">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="products grid3fit"></div>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
