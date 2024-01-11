@@ -73,12 +73,9 @@ searchInput.onkeyup = function() {
       fetchSelApi(selUrl);
       displaySelProduct(productSM);
     } 
-    if (window.location.href.indexOf("index.html" || "netlify") !== -1) {
-         console.log("index");
-         fetchApi(baseUrl);
-    }
     else {
         console.log("not");
+        fetchApi(baseUrl);
     }
   }
   checkIfOpenPage();
