@@ -6,8 +6,8 @@ const params = new URLSearchParams(queryString);
 const idSelectedMovie = params.get("id");
 
 
-export const selUrl = "http://squareeyes.local/wp-json/wc/store/products/" + idSelectedMovie;
-export const selUrlDyn = "http://kineon.no/wp-json/wc/store/products/" + idSelectedMovie;
+//export const selUrl = "http://squareeyes.local/wp-json/wc/store/products/" + idSelectedMovie;
+export const selUrl = "http://kineon.no/wp-json/wc/store/products/" + idSelectedMovie;
 
 export async function fetchSelApi(url) {
     try {
@@ -26,4 +26,4 @@ export async function fetchSelApi(url) {
     }
   }
   
-  fetchSelApi(selUrlDyn);
+  fetchSelApi(selUrl);
