@@ -5,7 +5,6 @@ const selProductArea = document.querySelector(".selProductArea");
 let productSM;
   export function displaySelProduct(productSM) {
     console.log(productSM);
-    console.log("Yes")
     
     const selProductArea = document.querySelector(".selProductArea");
     
