@@ -28,7 +28,7 @@ let productSM;
     regularPrice.textContent = `${regularPNum} kr`;
     regularPrice.className = "pricePar regularPrice";
 
-    if (pricePar === regularPrice) {
+    if (productPNum === regularPNum) {
       regularPrice.style.display = 'none';
     } else {
       regularPrice.style.display = 'block';
