@@ -3,19 +3,16 @@ import { displayProducts } from "../utils/renderMovies.js";
 //const baseURLDyn = "https://www.kineon.no/wp-json/wc/store/products/";
 
 export async function fetchApi(url) {
-    try {
-        const perPage = "20";
-        const apiUrl = `${url}?per_page=${perPage}`;
+    try { 
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`API request failed with status: ` + response.status);
           }
         const products = await response.json();
-        console.log(products);
 
-        displayProducts(products)
+        displayProducts(products);
 
-        return url;
+        return products;
     }
     catch (error) {
         console.log("Error selectedMovie: " + error);

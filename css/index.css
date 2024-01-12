@@ -8,6 +8,19 @@
     font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+footer {
+    margin: 10rem;
+}
+
+button {
+    border-radius: 0.4rem;
+    border-width: 1px;
+    padding:  0.4rem 1rem;
+    margin: 0.6rem;
+}
+button:hover {
+    font-weight: 600;
+}
 
 .content_wrap {
     max-width: 1600px;
@@ -15,12 +28,16 @@
     margin: 0 auto;
 }
 
+.selProduct {
+    width: fit-content;
+}
+
 /* Product styling */
 .products {
     margin: 1rem 0;
 }
 .product {
-    background-color: var(--greywhite);
+    background-color: var(--white);
     border-radius: 6px;
     max-width: 15rem;
     
@@ -34,8 +51,16 @@
     border-radius: 6px 6px 0 0;
 }
 
-.productName, .productPrice {
+.productName, .pricePar {
     margin: 0.5rem 1rem;
+}
+.regularPrice {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: gray;
+}
+.salePrice {
+    border-left: 2px solid var(--yellow)
 }
 
 .link {
@@ -43,6 +68,9 @@
     color: black;
 }
 
+.hidden {
+    display: none;
+}
 /* selected movie page */
 
 

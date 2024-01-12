@@ -3,3 +3,17 @@
     grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
+
+
+.flex {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+}
+
+.flexCenter {
+    display: flex; 
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+}
